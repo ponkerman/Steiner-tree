@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steiner-tree", "Steiner-tree.csproj", "{9B9397C7-46BD-4991-A536-3D17A35F8D22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steiner-tree", "Steiner-tree.csproj", "{E395BA11-C25C-4476-AD50-BE481E8B2242}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9B9397C7-46BD-4991-A536-3D17A35F8D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B9397C7-46BD-4991-A536-3D17A35F8D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B9397C7-46BD-4991-A536-3D17A35F8D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B9397C7-46BD-4991-A536-3D17A35F8D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E395BA11-C25C-4476-AD50-BE481E8B2242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E395BA11-C25C-4476-AD50-BE481E8B2242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E395BA11-C25C-4476-AD50-BE481E8B2242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E395BA11-C25C-4476-AD50-BE481E8B2242}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
