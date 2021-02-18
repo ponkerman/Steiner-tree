@@ -39,7 +39,7 @@ namespace Steiner_tree
             }
 
             testGraph = new Graph(testV, new List<Edge>());
-            referenceGraph = new Graph(new List<Vertex>(), new List<Edge>());
+            referenceGraph = new Graph(testGraph.vertices, new List<Edge>());
             Console.WriteLine("Equality to reference test: ");
             Console.WriteLine(ITest.EqTest(referenceGraph, ISteiner.SteinerTree(testGraph.vertices)));
 
