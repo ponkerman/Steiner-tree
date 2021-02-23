@@ -1,26 +1,22 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
+using SteinerTree;
 
-namespace Steiner_tree
+namespace MyProg
 {
-    struct coord {
-        public double x, y;
-        public coord(double x, double y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
 
-    class Program : ISteiner, ITest
+    class Program 
     {
+        
         const string path = @"../../../SteinerTree.txt";
 
         static void Main(string[] args)
         {
+            
             List<Vertex> testV = new List<Vertex>();
-            Graph testGraph;
-            Graph referenceGraph;
+            Graph referenceGraph = new Graph(); // primer
+            Graph resultGraph = new Graph(); // resultat
 
             try
             {
@@ -29,7 +25,7 @@ namespace Steiner_tree
                     string line;
                     while ((line = sr.ReadLine()) != null)
                     {
-                        testV.Add(new Vertex(new coord(Convert.ToDouble(line.Split(' ').GetValue(0)), Convert.ToDouble(line.Split(' ').GetValue(1)))));
+                        testV.Add(new Vertex(Convert.ToDouble(line.Split(' ').GetValue(0)), Convert.ToDouble(line.Split(' ').GetValue(1))));
                     }
                 }
             }
@@ -38,10 +34,13 @@ namespace Steiner_tree
                 Console.WriteLine(e.Message);
             }
 
-            testGraph = new Graph(testV, new List<Edge>());
-            referenceGraph = new Graph(testGraph.vertices, new List<Edge>());
+            referenceGraph = new Graph(new List<Vertex>(), new List<Edge>()); // stroim primer
+
+            resultGraph.SteinerTreeBuilder(); // stroim derevo po alg
+
+
             Console.WriteLine("Equality to reference test: ");
-            Console.WriteLine(ITest.EqTest(referenceGraph, ISteiner.SteinerTree(testGraph.vertices)));
+            Console.WriteLine(Test.EqTest(referenceGraph, resultGraph));
 
         }
     }
