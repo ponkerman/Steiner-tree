@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steiner-tree", "Steiner-tree.csproj", "{E395BA11-C25C-4476-AD50-BE481E8B2242}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProg", "..\MyProg\MyProg.csproj", "{E395BA11-C25C-4476-AD50-BE481E8B2242}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteinerTree", "..\StrinerTree\SteinerTree.csproj", "{78466FE4-C065-4409-B503-159CDA211E62}"
 EndProject
