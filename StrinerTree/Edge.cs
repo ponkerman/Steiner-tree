@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace SteinerTree
 {
     public class Edge
@@ -15,5 +16,8 @@ namespace SteinerTree
             vertex1 = fst_vertex;
             vertex2 = sec_vertex;
         }
+
     }
+
+
 }

@@ -6,6 +6,6 @@ namespace SteinerTree
 {
     interface IConnectivity
     {
-        private bool ConnectivityCheck(Graph tree) { return false; }
+        private bool? ConnectivityCheck(Graph tree) { return null; }
     }
 }

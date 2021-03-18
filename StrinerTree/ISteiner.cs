@@ -6,6 +6,7 @@ namespace SteinerTree
 {
     interface ISteiner
     {
-        void SteinerTreeBuilder();
+        private void STBuilder() { }
+        private Graph STfragment(List<Vertex> verList) { return new Graph(); }
     }
 }
